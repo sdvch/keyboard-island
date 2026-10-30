@@ -1,6 +1,6 @@
 {
   "name": "keyboard-island",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "A gentle, browser-local typing adventure for children, with 96 chapters and optional on-device face tracking.",
   "license": "MIT",

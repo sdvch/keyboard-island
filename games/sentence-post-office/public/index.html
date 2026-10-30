@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f8f2e3" />
+    <title>小小键盘游乐园 · 选择你的冒险</title>
+    <link rel="icon" href="assets/postmark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="series.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="brand"
+          ><svg viewBox="0 0 48 38" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="46" height="36" rx="9" fill="#447d6e" />
+            <path
+              d="M10 11h4m8 0h4m8 0h4M10 19h4m8 0h4m8 0h4M15 27h18"
+              stroke="#fff2d4"
+              stroke-width="3"
+              stroke-linecap="round"
+            /></svg
+          >小小键盘游乐园</span
+        ><span class="tag">每一次敲击，都有小惊喜</span>
+      </header>
+      <div class="heading">
+        <span class="eyebrow">LITTLE KEYS, BIG ADVENTURES</span>
+        <h1>今天，开启哪一段冒险？</h1>
+        <p>两个独立系列，各自保存进度。</p>
+      </div>
+      <section class="series-grid">
+        <a
+          class="series island"
+          href="https://keyboard-island-doudou.groovy-river-7567.chatgpt.site/"
+          ><div class="series-art">
+            <svg viewBox="0 0 600 240" fill="none" aria-hidden="true">
+              <rect width="600" height="240" fill="#dbece5" />
+              <circle cx="470" cy="54" r="28" fill="#edcc78" />
+              <path d="M0 161q150-100 300-9t300 0v88H0" fill="#98b8a3" />
+              <ellipse cx="306" cy="210" rx="190" ry="30" fill="#90b5b0" />
+              <path d="m135 194 77-29 167 5 87 25-83 28H212z" fill="#dbd4a3" />
+              <path d="M263 82h62v100h-62z" fill="#d8a078" />
+              <path d="m247 83 47-45 49 45" fill="#658c78" />
+              <rect
+                x="281"
+                y="127"
+                width="27"
+                height="55"
+                rx="12"
+                fill="#5e8c78"
+              />
+              <path
+                d="M182 88v97m-31-59 31-62 31 62m-53-18 22-50 25 50"
+                stroke="#6d9a7e"
+                stroke-width="10"
+                stroke-linejoin="round"
+              />
+              <g transform="translate(390 120)">
+                <circle
+                  cx="0"
+                  cy="0"
+                  r="30"
+                  fill="#f5e8c5"
+                  stroke="#7eaaa0"
+                  stroke-width="9"
+                />
+                <path d="M-25 28h50v37h-50z" fill="#d99366" />
+                <circle cx="-9" cy="-3" r="3" fill="#476957" />
+                <circle cx="9" cy="-3" r="3" fill="#476957" />
+                <path
+                  d="M-7 10q7 6 14 0"
+                  stroke="#476957"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </g>
+              <path
+                d="m71 60 5-11 5 11 11 5-11 5-5 11-5-11-11-5z"
+                fill="#e6c377"
+              />
+            </svg>
+          </div>
+          <div class="series-copy">
+            <span class="series-id">系列 01 · 键盘启蒙</span>
+            <h2>键盘小岛<span>→</span></h2>
+            <p>
+              找字母、闯小岛、装扮小屋。<br />和熟悉的朋友，继续原来的冒险。
+            </p>
+            <div class="entry">
+              进入键盘小岛 <span>96 关 · 原有进度保留</span>
+            </div>
+          </div></a
+        ><a
+          class="series post-office"
+          href="post-office/"
+          aria-label="进入句子邮局"
+          ><div class="series-art" id="post-art"></div>
+          <div class="series-copy">
+            <span class="series-id">系列 02 · 句子练习 <b>新冒险</b></span>
+            <h2>句子邮局<span>→</span></h2>
+            <p>
+              句首大写、单词空格、句末标点。<br />写一封信，把快乐送到朋友身边。
+            </p>
+            <div class="entry">
+              进入句子邮局 <span>32 封信 · 独立进度</span>
+            </div>
+          </div></a
+        >
+      </section>
+      <footer>
+        <span>慢慢来，每一个小进步都值得开心。</span
+        ><span>推荐使用实体键盘</span>
+      </footer>
+    </main>
+    <script type="module">
+      import { landscape, train } from "./post-office/art.js";
+      document.getElementById("post-art").innerHTML =
+        landscape() + train("waiting flag-up connected");
+    </script>
+  </body>
+</html>

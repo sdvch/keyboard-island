@@ -9,6 +9,17 @@
 
 和豆豆一起叫醒萤火虫、修桥、送信、演奏音乐，再去新的世界冒险。每次正确按键都会改变画面；没有倒计时，按错可以继续试。
 
+## 两个独立系列
+
+新旧游戏各有入口、课程和浏览器存档。
+
+| 系列                            | 在线体验                                                                                         | 源码与本地启动                                                                                                                 |
+| ------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| 键盘小岛 · Keyboard Island      | [原有 96 关冒险](https://keyboard-island-doudou.groovy-river-7567.chatgpt.site/)                 | `public/` · `node scripts/serve.mjs`                                                                                           |
+| 句子邮局 · Sentence Post Office | [32 封英文来信](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/post-office/) | [games/sentence-post-office](games/sentence-post-office/README.zh-CN.md) · `node games/sentence-post-office/scripts/serve.mjs` |
+
+[打开插画系列选择页](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/)。句子邮局练习首字母大写、单词空格和句末标点，逐字正确后才能继续，并提供图形提示、音效和 16 枚收藏邮票。儿童界面使用简单英文，家长设置使用中文。以下内容仍为原键盘小岛的说明。
+
 ## 已有内容
 
 - **16 个世界、96 关、288 个情节阶段**。

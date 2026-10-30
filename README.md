@@ -9,6 +9,17 @@ A gentle typing adventure for children who are just meeting a physical keyboard.
 
 Help Doudou wake fireflies, repair bridges, deliver letters, play music, and explore new worlds. Every correct key changes the scene. There is no countdown and mistakes never end a game.
 
+## Game series
+
+This repository now contains two independent games. Their websites, courses and browser saves are separate.
+
+| Series                          | Play                                                                                                  | Source and local start                                                                                                   |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Keyboard Island · 键盘小岛      | [96-chapter adventure](https://keyboard-island-doudou.groovy-river-7567.chatgpt.site/)                | `public/` · `node scripts/serve.mjs`                                                                                     |
+| Sentence Post Office · 句子邮局 | [32 English letters](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/post-office/) | [games/sentence-post-office](games/sentence-post-office/README.md) · `node games/sentence-post-office/scripts/serve.mjs` |
+
+[Open the illustrated series chooser](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/). Sentence Post Office teaches initial capitals, spaces and punctuation with strict character gating, picture-led feedback and 16 collectible stamps. Its child interface uses simple English; parent settings use Chinese. The sections below document the original Keyboard Island game.
+
 ## What's included
 
 - **96 chapters across 16 worlds**, with 288 story stages.

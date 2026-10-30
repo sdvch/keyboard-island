@@ -1,0 +1,16 @@
+/* Local-only styles: system fonts, no remote imports or resources. */
+html {
+  color-scheme: light;
+}
+svg {
+  max-width: 100%;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+::selection {
+  background: #ead3a7;
+  color: #30584e;
+}
