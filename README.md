@@ -18,6 +18,10 @@ This repository now contains two independent games. Their websites, courses and 
 | Keyboard Island · 键盘小岛      | [96-chapter adventure](https://keyboard-island-doudou.groovy-river-7567.chatgpt.site/)                | `public/` · `node scripts/serve.mjs`                                                                                     |
 | Sentence Post Office · 句子邮局 | [32 English letters](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/post-office/) | [games/sentence-post-office](games/sentence-post-office/README.md) · `node games/sentence-post-office/scripts/serve.mjs` |
 
+**Sentence Post Office · independent series**
+
+![Sentence Post Office home screen](games/sentence-post-office/docs/images/post-office.png)
+
 [Open the illustrated series chooser](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/). Sentence Post Office teaches initial capitals, spaces and punctuation with strict character gating, picture-led feedback and 16 collectible stamps. Its child interface uses simple English; parent settings use Chinese. The sections below document the original Keyboard Island game.
 
 ## What's included

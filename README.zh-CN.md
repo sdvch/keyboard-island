@@ -18,6 +18,10 @@
 | 键盘小岛 · Keyboard Island      | [原有 96 关冒险](https://keyboard-island-doudou.groovy-river-7567.chatgpt.site/)                 | `public/` · `node scripts/serve.mjs`                                                                                           |
 | 句子邮局 · Sentence Post Office | [32 封英文来信](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/post-office/) | [games/sentence-post-office](games/sentence-post-office/README.zh-CN.md) · `node games/sentence-post-office/scripts/serve.mjs` |
 
+**句子邮局 · 独立系列**
+
+![句子邮局首页](games/sentence-post-office/docs/images/post-office.png)
+
 [打开插画系列选择页](https://sentence-post-office-doudou.groovy-river-7567.chatgpt.site/)。句子邮局练习首字母大写、单词空格和句末标点，逐字正确后才能继续，并提供图形提示、音效和 16 枚收藏邮票。儿童界面使用简单英文，家长设置使用中文。以下内容仍为原键盘小岛的说明。
 
 ## 已有内容
