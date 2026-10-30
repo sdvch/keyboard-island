@@ -53,7 +53,9 @@ test("all 32 missions complete and replay cannot duplicate rewards", async ({
   for (const mission of ALL_MISSIONS) {
     if (mission.index === 0)
       await page.getByTestId(`route-${mission.routeId}`).click();
-    await page.getByRole("textbox", { name: "我的信纸" }).fill(mission.target);
+    const paper = page.getByRole("textbox", { name: "我的信纸" });
+    await paper.fill(mission.target);
+    await expect(paper, mission.id).toHaveValue(mission.target);
     await page.getByRole("button", { name: "Send", exact: true }).click();
     await expect(
       page.getByRole("heading", { name: "Delivered!" }),
@@ -243,4 +245,30 @@ test("visual review artifacts, no external resources or browser errors", async (
   expect(errors).toEqual([]);
   expect(failed).toEqual([]);
   expect(external).toEqual([]);
+});
+
+test("a pending render frame cannot steal the native text replacement selection", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    window.__postFocusFrames = [];
+    window.requestAnimationFrame = (callback) => {
+      window.__postFocusFrames.push(callback);
+      return window.__postFocusFrames.length;
+    };
+  });
+  await page.goto("/post-office/");
+  await page.getByTestId("route-punctuation").click();
+  const paper = page.getByRole("textbox", { name: "我的信纸" });
+  await paper.selectText();
+  await page.evaluate(() =>
+    window.__postFocusFrames
+      .splice(0)
+      .forEach((callback) => callback(performance.now())),
+  );
+  await page.keyboard.insertText("The bear is sleepy.");
+  await expect(paper).toHaveValue("The bear is sleepy.");
+  await expect(
+    page.getByRole("button", { name: "Send", exact: true }),
+  ).toBeEnabled();
 });

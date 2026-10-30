@@ -178,11 +178,12 @@ function render() {
       }
     });
     updateDesk();
-    requestAnimationFrame(() => {
-      if (screen !== "game" || modal.open) return;
+    // Focus before returning from render. A delayed frame could otherwise move
+    // a native replacement/paste selection between selection and insertion.
+    if (!modal.open) {
       paper.focus({ preventScroll: true });
       paper.setSelectionRange(paper.value.length, paper.value.length);
-    });
+    }
   }
 }
 
